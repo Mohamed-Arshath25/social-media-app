@@ -4,3 +4,6 @@ node_modules
 coverage
 dist
 build
+backend.out.log
+backend.err.log
+frontend/dist
