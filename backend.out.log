@@ -1,0 +1,4 @@
+Database connected successfully
+Server is running on port 5000
+[0mGET /api/health [32m200[0m 3.327 ms - 60[0m
+[0mPOST /api/auth/register [32m201[0m 130.944 ms - 367[0m

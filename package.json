@@ -1,0 +1,43 @@
+{
+  "name": "social-media-app-backend",
+  "version": "1.0.0",
+  "description": "Production-ready backend for a social media app using Node.js, Express, PostgreSQL, and Prisma.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "dev:backend": "nodemon server.js",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:full": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "start": "node server.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "postgresql",
+    "prisma",
+    "jwt",
+    "social-media"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^6.6.0",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9",
+    "prisma": "^6.6.0"
+  }
+}
