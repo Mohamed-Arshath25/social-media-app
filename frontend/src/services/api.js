@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://127.0.0.1:5000/api"
+  baseURL: import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:5000/api"
 });
 
 api.interceptors.request.use((config) => {
@@ -20,7 +20,7 @@ export const extractErrorMessage = (error) => {
   }
 
   if (error.request && !error.response) {
-    return "Cannot reach the backend API. Make sure the backend is running on http://127.0.0.1:5000.";
+    return "Cannot reach the backend API. Check your deployed backend URL.";
   }
 
   return error.response?.data?.message || "Something went wrong. Please try again.";

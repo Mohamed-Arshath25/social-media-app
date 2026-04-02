@@ -52,7 +52,7 @@ const LoginPage = () => {
           <div className="glass-panel hidden rounded-[36px] p-10 lg:block">
             <p className="text-xs uppercase tracking-[0.45em] text-slate-400">Pulse Social</p>
             <h1 className="mt-6 max-w-xl font-display text-6xl font-bold leading-none text-slate-900 dark:text-white">
-              Your network, styled like a real product.
+              A social space built to feel fast, elegant, and alive.
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-8 text-slate-600 dark:text-slate-300">
               Share updates, follow people, comment on moments, and move through a polished social experience.
